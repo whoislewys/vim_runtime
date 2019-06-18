@@ -178,3 +178,19 @@ let g:ale_lint_on_enter = 0
 let g:gitgutter_enabled=1
 set updatetime=100
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Hexokinase (Show color squares next to hex & rgb colors)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable for all filetypes
+let g:Hexokinase_ftAutoload = ['*']
+
+" Show color square in the left gutter (aka 'sign_column')
+let g:Hexokinase_highlighters = ['sign_column']
+
+" To make it almost live
+" This may cause some lag if there are a lot of colours in the file
+let g:Hexokinase_refreshEvents = ['TextChanged', 'TextChangedI']
+
+" Explicitly enable all builtin patterns
+let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colour_names']

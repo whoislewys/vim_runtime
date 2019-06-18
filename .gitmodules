@@ -22,3 +22,6 @@
 [submodule "my_plugins/vim-highlightedyank"]
 	path = my_plugins/vim-highlightedyank
 	url = git@github.com:machakann/vim-highlightedyank.git
+[submodule "my_plugins/vim-hexokinase"]
+	path = my_plugins/vim-hexokinase
+	url = https://github.com/RRethy/vim-hexokinase

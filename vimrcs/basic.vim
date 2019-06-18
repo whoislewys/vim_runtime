@@ -130,6 +130,8 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" IMPORTANT! The colorscheme is modified in extended.vim
+
 " Enable syntax highlighting
 syntax enable 
 
@@ -138,7 +140,8 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-" Color scheme modified in extended.vim
+" Turn on termguicolors (used for Hexokinase to display color block next to color codes)
+set termguicolors
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -153,7 +156,6 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
