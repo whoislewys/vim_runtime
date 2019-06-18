@@ -16,3 +16,6 @@
 [submodule "my_plugins/onedark.vim"]
 	path = my_plugins/onedark.vim
 	url = git@github.com:whoislewys/onedark.vim.git
+[submodule "my_plugins/vim-startify"]
+	path = my_plugins/vim-startify
+	url = git@github.com:mhinz/vim-startify.git
