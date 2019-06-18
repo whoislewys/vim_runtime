@@ -138,12 +138,7 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
-
-set background=dark
+" Color scheme modified in extended.vim
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -168,6 +163,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Persistent clipboard across vim instances
+" Pretty sure there is a plugin for it somewhere in this vimrc, but i can't find it easily and im done looking for it lmaooooooooozzzzzzzz
+" set clipboard=unnamedplus
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -179,8 +177,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -190,8 +188,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+set number "Show line numbers
 
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""
 " Visual mode pressing * or # searches for the current selection

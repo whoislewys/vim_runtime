@@ -156,7 +156,7 @@ if &background=='light'
   if &t_Co==256
     " 256color light terminal support here
 
-    hi Normal		ctermfg=16	ctermbg=254	cterm=NONE
+    hi Normal		ctermfg=16	ctermbg=NONE	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
     "hi Normal		ctermfg=16	ctermbg=NONE	cterm=NONE
     hi Search		ctermfg=White	ctermbg=DarkRed	cterm=NONE
@@ -491,7 +491,7 @@ elseif &background=='dark'
     endif
   elseif &t_Co==256
     " 256color dark terminal support here
-    hi Normal		ctermfg=252	ctermbg=234	cterm=NONE
+    hi Normal		ctermfg=252	ctermbg=NONE	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
     "hi Normal		ctermfg=252	ctermbg=NONE	cterm=NONE
     hi Comment		ctermfg=186	ctermbg=NONE	cterm=NONE
