@@ -190,7 +190,7 @@ let g:Hexokinase_highlighters = ['sign_column']
 
 " To make it almost live
 " This may cause some lag if there are a lot of colours in the file
-let g:Hexokinase_refreshEvents = ['TextChanged', 'TextChangedI']
+let g:Hexokinase_refreshEvents = ['BufWritePost']
 
 " Explicitly enable all builtin patterns
 let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colour_names']
