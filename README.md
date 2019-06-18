@@ -1,8 +1,6 @@
-![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
-
 # The Ultimate vimrc
 
-Over the last 10 years, I have used and tweaked Vim. This configuration is the ultimate vimrc (or at least my version of it).
+Over the last 10 days, I have used and tweaked some randos Vim configs. This configuration is the ultimate vimrc, blessed by Terry A. Davis himself.
 
 There are two versions:
 
@@ -16,7 +14,7 @@ I would, of course, recommend using the awesome version.
 ### Install for your own user only
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
-	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone --recursive https://github.com/whoislewys/vim_runtime.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 	
 ### Install for multiple users
@@ -28,21 +26,6 @@ To install for multiple users, the repository needs to be cloned to a location a
 	sh ~/.vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime --all
 	
 Naturally, `/opt/vim_runtime` can be any directory, as long as all the users specified have read access.
-
-## Fonts
-
-I recommend using [IBM Plex Mono font](https://github.com/IBM/plex) (it's an open-source and awesome font that can make your code beautiful). The Awesome vimrc is already setup to try to use it.
-
-Some other fonts that Awesome will try to use:
-
-* [Hack](http://sourcefoundry.org/hack/)
-* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/)
-
-## How to install the Basic version?
-
-The basic version is just one file and no plugins. Just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) and paste it into your vimrc.
-
-The basic version is useful to install on remote servers where you don't need many plugins, and you don't do many edits.
 
 	git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
@@ -107,14 +90,6 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-zenroom2](https://github.com/amix/vim-zenroom2) Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room
 
 
-## Included color schemes
-
-* [peaksea](https://github.com/vim-scripts/peaksea): The default
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* [vim-irblack](https://github.com/wgibbs/vim-irblack)
-* [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [vim-pyte](https://github.com/therubymug/vim-pyte)
-
 
 ## Included modes
 
@@ -137,8 +112,10 @@ After you have installed the setup, you can create **~/.vim_runtime/my_configs.v
 You can also install your plugins, for instance, via pathogen you can install [vim-rails](https://github.com/tpope/vim-rails):
 
 	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git my_plugins/vim-rails
+	git submodule add git://github.com/tpope/vim-rails.git my_plugins/vim-rails
 
+  It is extra helpful if you make an alias for this, like
+  `alias vget="cd ~/.vim_runtime/my_plugins && git submodule add $1"`
 
 ## Key Mappings
 
