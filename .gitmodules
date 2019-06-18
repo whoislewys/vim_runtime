@@ -1,0 +1,18 @@
+[submodule "my_plugins/LanguageClient-neovim"]
+	path = my_plugins/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim.git
+[submodule "my_plugins/dart-vim-plugin"]
+	path = my_plugins/dart-vim-plugin
+	url = git@github.com:dart-lang/dart-vim-plugin.git
+[submodule "my_plugins/fzf.vim"]
+	path = my_plugins/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "my_plugins/ncm2"]
+	path = my_plugins/ncm2
+	url = git@github.com:ncm2/ncm2.git
+[submodule "my_plugins/nvim-yarp"]
+	path = my_plugins/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp.git
+[submodule "my_plugins/onedark.vim"]
+	path = my_plugins/onedark.vim
+	url = git@github.com:joshdick/onedark.vim.git
