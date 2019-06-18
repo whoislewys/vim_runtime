@@ -15,4 +15,4 @@
 	url = git@github.com:roxma/nvim-yarp.git
 [submodule "my_plugins/onedark.vim"]
 	path = my_plugins/onedark.vim
-	url = git@github.com:joshdick/onedark.vim.git
+	url = git@github.com:whoislewys/onedark.vim.git
