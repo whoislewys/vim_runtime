@@ -19,3 +19,6 @@
 [submodule "my_plugins/vim-javascript"]
 	path = my_plugins/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "my_plugins/coc.nvim"]
+	path = my_plugins/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
