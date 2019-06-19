@@ -101,6 +101,7 @@ let g:lsc_auto_map = {
 """"""""""""""""""""""""""""""
 " => Dart Section
 """"""""""""""""""""""""""""""
+" actual language server is being set up in ~/.config/nvim/coc-settings.json
 " For dart-vim-plugin
 let dart_html_in_string=v:true
 let dart_corelib_highlight=v:false
