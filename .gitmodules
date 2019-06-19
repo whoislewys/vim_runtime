@@ -7,12 +7,6 @@
 [submodule "my_plugins/fzf.vim"]
 	path = my_plugins/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
-[submodule "my_plugins/ncm2"]
-	path = my_plugins/ncm2
-	url = git@github.com:ncm2/ncm2.git
-[submodule "my_plugins/nvim-yarp"]
-	path = my_plugins/nvim-yarp
-	url = git@github.com:roxma/nvim-yarp.git
 [submodule "my_plugins/onedark.vim"]
 	path = my_plugins/onedark.vim
 	url = git@github.com:whoislewys/onedark.vim.git
@@ -25,3 +19,6 @@
 [submodule "my_plugins/vim-hexokinase"]
 	path = my_plugins/vim-hexokinase
 	url = https://github.com/RRethy/vim-hexokinase
+[submodule "my_plugins/vim-javascript"]
+	path = my_plugins/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
