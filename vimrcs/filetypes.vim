@@ -101,14 +101,6 @@ let g:lsc_auto_map = {
 """"""""""""""""""""""""""""""
 " => Dart Section
 """"""""""""""""""""""""""""""
-" For language server
-" Required for operations modifying multiple buffers like rename.
-set hidden
-
-let g:LanguageClient_serverCommands = {
-    \ 'dart': ['dart_language_server'],
-    \ }
-
 " For dart-vim-plugin
 let dart_html_in_string=v:true
 let dart_corelib_highlight=v:false
