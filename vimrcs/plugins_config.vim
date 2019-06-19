@@ -196,3 +196,10 @@ let g:Hexokinase_refreshEvents = ['BufWritePost']
 
 " Explicitly enable all builtin patterns
 let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colour_names']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Coc (intellisense for vim)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
