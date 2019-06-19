@@ -161,10 +161,9 @@ let g:ale_linters = {
 \   'go': ['go', 'golint', 'errcheck']
 \}
 
-"let g:ale_fixers = {
-"\   'javascript': ['eslint'],
-"\}
-
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
@@ -173,6 +172,7 @@ let g:ale_set_highlights = 0
 
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
@@ -202,4 +202,3 @@ let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
