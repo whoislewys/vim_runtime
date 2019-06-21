@@ -204,8 +204,8 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Clear highlight when <leader><cr> is pressed (helpful for clearing search highlight)
-map <silent> <leader><cr> :noh<cr>
+" Clear highlight when <leader><carriage return> is pressed (helpful for clearing search highlight)
+map <silent> <leader><cr> :noh<cr>:<backspace>
 
 " Smart way to move between windows
 map <C-j> <C-W>j

@@ -206,3 +206,9 @@ let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Override gd with coc gotodefinition in normal mode
+nmap <silent> gd :call CocAction('jumpDefinition', 'edit')<CR>
+" Also allow for Ctrl-b gotodefinition in any mode like intelliJ
+noremap <silent> c-b gd :call CocAction('jumpDefinition', 'edit')<CR>
+
