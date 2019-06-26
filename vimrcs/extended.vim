@@ -29,6 +29,8 @@ colorscheme onedark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
 autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_configs.vim
+autocmd! bufwritepost ~/.vim_runtime/plugin.vim source ~/.vim_runtime/vimrcs/plugins_config.vim
+autocmd! bufwritepost ~/.vim_runtime/plugin.vim source ~/.vim_runtime/vimrcs/filetypes.vim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
