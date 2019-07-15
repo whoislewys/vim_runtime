@@ -201,6 +201,10 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " Clear highlight when <leader><carriage return> is pressed (helpful for clearing search highlight)
 nnoremap <leader><CR> :noh<CR>:<backspace>
 
+" Easier navigating between methods
+nnoremap gM [m
+nnoremap gm ]m
+
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -213,8 +217,9 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+" List buffers with
+" Go to a buffer with ':buffer N' or 'N CTRL-^' where N is the buffer number
+map <leader>l :buffers :ls<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
