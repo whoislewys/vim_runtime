@@ -7,9 +7,6 @@
 [submodule "my_plugins/onedark.vim"]
 	path = my_plugins/onedark.vim
 	url = git@github.com:whoislewys/onedark.vim.git
-[submodule "my_plugins/vim-startify"]
-	path = my_plugins/vim-startify
-	url = git@github.com:mhinz/vim-startify.git
 [submodule "my_plugins/vim-highlightedyank"]
 	path = my_plugins/vim-highlightedyank
 	url = git@github.com:machakann/vim-highlightedyank.git
@@ -22,3 +19,6 @@
 [submodule "my_plugins/coc.nvim"]
 	path = my_plugins/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "my_plugins/vim-game-code-break"]
+	path = my_plugins/vim-game-code-break
+	url = https://github.com/johngrib/vim-game-code-break
