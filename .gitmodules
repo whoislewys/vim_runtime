@@ -22,3 +22,6 @@
 [submodule "my_plugins/vim-game-code-break"]
 	path = my_plugins/vim-game-code-break
 	url = https://github.com/johngrib/vim-game-code-break
+[submodule "my_plugins/limelight.vim"]
+	path = my_plugins/limelight.vim
+	url = https://github.com/junegunn/limelight.vim

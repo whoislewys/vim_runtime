@@ -4,7 +4,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
@@ -204,6 +203,7 @@ let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Coc (intellisense for vim)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
@@ -214,3 +214,13 @@ nnoremap gr :call CocAction('jumpReferences', 'edit') <CR>
 " Rename
 nmap rn :call CocAction('cocRename') <CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Limelight
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sometimes Limelight can't calculate dimming color for current colorscheme
+let g:limelight_conceal_ctermfg = 220
+let g:limelight_conceal_guifg = '#777777'
+
+" Highlighting priority (default: 10)
+"   Set it to -1 not to overrule hlsearch
+let g:limelight_priority = -1
