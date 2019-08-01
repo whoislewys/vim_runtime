@@ -25,3 +25,6 @@
 [submodule "my_plugins/limelight.vim"]
 	path = my_plugins/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
+[submodule "my_plugins/typescript-vim"]
+	path = my_plugins/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
