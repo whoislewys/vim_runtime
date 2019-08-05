@@ -28,3 +28,9 @@
 [submodule "my_plugins/typescript-vim"]
 	path = my_plugins/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
+[submodule "my_plugins/vim-jsx-typescript"]
+	path = my_plugins/vim-jsx-typescript
+	url = https://github.com/peitalin/vim-jsx-typescript
+[submodule "my_plugins/emmet-vim"]
+	path = my_plugins/emmet-vim
+	url = https://github.com/mattn/emmet-vim
