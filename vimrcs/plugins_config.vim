@@ -33,6 +33,7 @@ map <leader>r :MRU<CR>
 " => FZF 
 """"""""""""""""""""""""""""""
 map <leader>f :FZF<CR>
+map <leader>b :Buffers<cr>
 
 """"""""""""""""""""""""""""""
 " => YankStack
@@ -41,20 +42,6 @@ let g:yankstack_yank_keys = ['y', 'd']
 
 nmap <c-p> <Plug>yankstack_substitute_older_paste
 nmap <c-n> <Plug>yankstack_substitute_newer_paste
-
-
-""""""""""""""""""""""""""""""
-" => CTRL-P
-""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
-let g:ctrlp_map = '<c-f>'
-map <leader>b :CtrlPBuffer<cr>
-noremap <c-f> :CtrlPBuffer<cr>
-
-let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-
 
 """"""""""""""""""""""""""""""
 " => ZenCoding

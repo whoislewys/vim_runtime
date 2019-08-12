@@ -217,10 +217,6 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-" List buffers with
-" Go to a buffer with ':buffer N' or 'N CTRL-^' where N is the buffer number
-map <leader>l :buffers :ls<cr>
-
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
