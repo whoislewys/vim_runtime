@@ -13,9 +13,6 @@
 [submodule "my_plugins/vim-hexokinase"]
 	path = my_plugins/vim-hexokinase
 	url = https://github.com/RRethy/vim-hexokinase
-[submodule "my_plugins/vim-javascript"]
-	path = my_plugins/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
 [submodule "my_plugins/coc.nvim"]
 	path = my_plugins/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
@@ -25,9 +22,6 @@
 [submodule "my_plugins/limelight.vim"]
 	path = my_plugins/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
-[submodule "my_plugins/typescript-vim"]
-	path = my_plugins/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim
 [submodule "my_plugins/emmet-vim"]
 	path = my_plugins/emmet-vim
 	url = https://github.com/mattn/emmet-vim
@@ -37,3 +31,6 @@
 [submodule "my_plugins/vim-jsx-pretty"]
 	path = my_plugins/vim-jsx-pretty
 	url = https://github.com/MaxMEllon/vim-jsx-pretty
+[submodule "my_plugins/yats.vim"]
+	path = my_plugins/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim
