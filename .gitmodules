@@ -22,9 +22,6 @@
 [submodule "my_plugins/limelight.vim"]
 	path = my_plugins/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
-[submodule "my_plugins/emmet-vim"]
-	path = my_plugins/emmet-vim
-	url = https://github.com/mattn/emmet-vim
 [submodule "my_plugins/lexima.vim"]
 	path = my_plugins/lexima.vim
 	url = https://github.com/cohama/lexima.vim
