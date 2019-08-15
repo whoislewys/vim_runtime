@@ -31,3 +31,6 @@
 [submodule "my_plugins/yats.vim"]
 	path = my_plugins/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim
+[submodule "my_plugins/vim-ghost"]
+	path = my_plugins/vim-ghost
+	url = https://github.com/raghur/vim-ghost
