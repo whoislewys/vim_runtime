@@ -1,0 +1,5 @@
+Software spectrum
+
+Liberal
+
+Conservative

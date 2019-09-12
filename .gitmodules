@@ -34,3 +34,6 @@
 [submodule "my_plugins/vim-ghost"]
 	path = my_plugins/vim-ghost
 	url = https://github.com/raghur/vim-ghost
+[submodule "my_plugins/jedi-vim"]
+	path = my_plugins/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
