@@ -21,7 +21,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme onedark
+" colorscheme onedark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
