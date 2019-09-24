@@ -1,10 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
-" This requries that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FZF (only works on mac)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.fzf
@@ -21,7 +15,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-" colorscheme onedark
+colorscheme onedark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
