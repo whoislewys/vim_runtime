@@ -162,8 +162,8 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Gotos
-nnoremap gd :call CocAction('jumpDefinition', 'edit') <CR>
-nnoremap gr :call CocAction('jumpReferences', 'edit') <CR>
+nnoremap gd :call CocActionAsync('jumpDefinition', 'edit') <CR>
+nnoremap gr :call CocActionAsync('jumpReferences', 'edit') <CR>
 "
 " Rename
 nmap rn :call CocAction('cocRename') <CR>
