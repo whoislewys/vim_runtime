@@ -4,7 +4,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source ~/.vim_runtime/vimrcs/vimplugrc.vim
 endif
 
-call plug#begin('~/.vim_runtime/vim_plug_plugins')
+call plug#begin('~/.config/nvim/.vim_runtime/vim_plug_plugins')
 
 Plug 'git@github.com:yuttie/comfortable-motion.vim.git'
 Plug 'dart-lang/dart-vim-plugin'
