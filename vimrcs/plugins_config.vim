@@ -23,6 +23,7 @@ map <leader>r :MRU<CR>
 """"""""""""""""""""""""""""""
 " => FZF 
 """"""""""""""""""""""""""""""
+set rtp+=~/fzf
 map <leader>f :FZF<CR>
 map <leader>b :Buffers<cr>
 
