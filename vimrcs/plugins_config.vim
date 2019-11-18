@@ -14,7 +14,6 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
-
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
@@ -168,6 +167,12 @@ nnoremap gr :call CocActionAsync('jumpReferences', 'edit') <CR>
 " Rename
 nmap rn :call CocAction('cocRename') <CR>
 
+" coc-yank extension
+" install with: :CocInstall coc-yank
+" -A means auto preview, and --normal means open list on normal mode.
+nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr> 
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -180,3 +185,8 @@ let g:limelight_conceal_guifg = '#777777'
 let g:limelight_priority = -1
 
 nmap <silent> <leader>l :Limelight!!<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set diffopt+=vertical
