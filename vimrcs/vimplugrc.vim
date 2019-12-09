@@ -31,5 +31,6 @@ Plug 'git@github.com:cohama/lexima.vim'
 Plug 'git@github.com:machakann/vim-highlightedyank.git'
 Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
 Plug 'git@github.com:raghur/vim-ghost'
+Plug 'git@github.com:fatih/vim-go'
 
 call plug#end()
