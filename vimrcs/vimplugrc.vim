@@ -6,31 +6,37 @@ endif
 
 call plug#begin('~/.config/nvim/.vim_runtime/vim_plug_plugins')
 
-Plug 'git@github.com:yuttie/comfortable-motion.vim.git'
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'junegunn/goyo.vim'
+" Prettiness
+Plug 'git@github.com:whoislewys/onedark.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'machakann/vim-highlightedyank.git'
+Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
 Plug 'itchyny/lightline.vim'
-Plug 'vim-scripts/mru.vim'
-Plug 'scrooloose/nerdtree'
+
+" Utilities
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'junegunn/fzf.vim.git'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'amix/vim-zenroom2'
-Plug 'git@github.com:HerringtonDarkholme/yats.vim'
-Plug 'git@github.com:whoislewys/onedark.vim'
-Plug 'git@github.com:johngrib/vim-game-code-break'
-Plug 'git@github.com:davidhalter/jedi-vim'
-Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
-Plug 'git@github.com:junegunn/fzf.vim.git'
-Plug 'git@github.com:junegunn/limelight.vim'
-Plug 'git@github.com:dart-lang/dart-vim-plugin.git'
+Plug 'vim-scripts/mru.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'cohama/lexima.vim'
+
+" Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-Plug 'git@github.com:cohama/lexima.vim'
-Plug 'git@github.com:machakann/vim-highlightedyank.git'
-Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
-Plug 'git@github.com:raghur/vim-ghost'
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'git@github.com:fatih/vim-go', {'do': ':GoUpdateBinaries'}
+Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
+Plug 'git@github.com:HerringtonDarkholme/yats.vim'
+Plug 'aklt/plantuml-syntax'
+Plug 'scrooloose/vim-slumlord' " inline plantuml preview
+
+" Dumb shit
+Plug 'raghur/vim-ghost'
+Plug 'johngrib/vim-game-code-break'
 
 call plug#end()
