@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/.vim_runtime/vim_plug_plugins')
 " Prettiness
 Plug 'git@github.com:whoislewys/onedark.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'machakann/vim-highlightedyank.git'
+Plug 'machakann/vim-highlightedyank'
 Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
 Plug 'itchyny/lightline.vim'
 
@@ -18,7 +18,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'junegunn/fzf.vim.git'
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'amix/vim-zenroom2'
