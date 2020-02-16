@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-
 cd ~/.config
 
 echo 'set runtimepath+=~/.config/nvim/.vim_runtime
