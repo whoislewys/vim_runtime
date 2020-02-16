@@ -27,7 +27,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'cohama/lexima.vim'
 
 " Language stuff
-Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}, {'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'}
+Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release', 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'git@github.com:fatih/vim-go', {'do': ':GoUpdateBinaries'}
 Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
