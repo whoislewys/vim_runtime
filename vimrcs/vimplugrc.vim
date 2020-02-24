@@ -34,7 +34,6 @@ Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
 Plug 'git@github.com:HerringtonDarkholme/yats.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord' " inline plantuml preview
-Plug 'vim-latex/vim-latex'
 Plug 'tpope/vim-rails'
 
 " Dumb shit
