@@ -25,6 +25,7 @@ Plug 'amix/vim-zenroom2'
 Plug 'vim-scripts/mru.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'cohama/lexima.vim'
+Plug 'ruanyl/vim-gh-line'
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release', 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'}
@@ -39,5 +40,6 @@ Plug 'tpope/vim-rails'
 " Dumb shit
 Plug 'raghur/vim-ghost'
 Plug 'johngrib/vim-game-code-break'
+Plug 'gbigwood/Clippo'
 
 call plug#end()
