@@ -166,6 +166,9 @@ nmap rn :call CocAction('cocRename') <CR>
 " -A means auto preview, and --normal means open list on normal mode.
 nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr> 
 
+" Add `:OR` command for organize imports of the current buffer.
+command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
