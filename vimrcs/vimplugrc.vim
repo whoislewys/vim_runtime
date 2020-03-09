@@ -26,6 +26,7 @@ Plug 'vim-scripts/mru.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'cohama/lexima.vim'
 Plug 'ruanyl/vim-gh-line'
+Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release', 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'}
@@ -36,6 +37,7 @@ Plug 'git@github.com:HerringtonDarkholme/yats.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord' " inline plantuml preview
 Plug 'tpope/vim-rails'
+Plug 'luisgomez-wk/frugal.vim'
 
 " Dumb shit
 Plug 'raghur/vim-ghost'
