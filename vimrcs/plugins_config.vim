@@ -150,6 +150,9 @@ let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colo
 " => Coc (intellisense for vim)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Add coc statusline
+set statusline^=%{coc#status()}
+
 " Scroll forwards through suggestion list with Tab, and backwards with Shift+Tab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
