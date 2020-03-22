@@ -36,6 +36,7 @@ Plug 'git@github.com:HerringtonDarkholme/yats.vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord' " inline plantuml preview
 Plug 'tpope/vim-rails'
+Plug 'lifepillar/pgsql.vim'
 
 " Dumb shit
 Plug 'raghur/vim-ghost'
