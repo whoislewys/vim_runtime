@@ -27,6 +27,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'cohama/lexima.vim'
 Plug 'ruanyl/vim-gh-line'
 Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
+Plug 'jceb/vim-orgmode' " use with `.org` files
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release', 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'}
