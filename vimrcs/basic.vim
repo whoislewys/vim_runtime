@@ -186,6 +186,9 @@ set number "Show line numbers
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
+" Leave cursor where it is after yanking in visual mode
+" (By default it will move back to beginning of block)
+vmap y ygv<Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
