@@ -146,6 +146,9 @@ let g:Hexokinase_refreshEvents = ['BufWritePost']
 " Explicitly enable all builtin patterns
 let g:Hexokinase_optInPatterns = ['full_hex', 'triple_hex', 'rgb', 'rgba', 'colour_names']
 
+" Turn on termguicolors (used for Hexokinase to display color block next to color codes)
+set termguicolors
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Coc (intellisense for vim)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

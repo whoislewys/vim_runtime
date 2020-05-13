@@ -1,11 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => FZF (only works on mac)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.fzf
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
@@ -17,6 +10,9 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 colorscheme onedark
+
+" Italic comments (come after colorscheme to make sure colorscheme doesn't overwrite it)
+highlight Comment cterm=italic gui=italic
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Persistent undo
@@ -32,12 +28,3 @@ endtry
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Go to normal mode with esc while in terminal mode
 :tnoremap <Esc> <C-\><C-n>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General abbreviations
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General abbreviations
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
