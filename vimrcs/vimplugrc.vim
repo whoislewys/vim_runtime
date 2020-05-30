@@ -34,7 +34,6 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 " this fails everytime :(: 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css'
 Plug 'dart-lang/dart-vim-plugin'
-Plug 'git@github.com:fatih/vim-go', {'do': ':GoUpdateBinaries'}
 Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
 Plug 'git@github.com:HerringtonDarkholme/yats.vim'
 Plug 'aklt/plantuml-syntax'
