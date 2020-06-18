@@ -24,8 +24,8 @@ map <leader>r :MRU<CR>
 " => FZF 
 """"""""""""""""""""""""""""""
 set rtp+=~/fzf
-map <leader>f :FZF<CR>
-map <leader>b :Buffers<cr>
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>b :Buffers<cr>
 
 """"""""""""""""""""""""""""""
 " => ZenCoding
@@ -175,6 +175,10 @@ nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
 
+" List Code actions (such as 'wrap with widget' for flutter)
+nmap <silent><leader>ca <Plug>(coc-codelens-action)
+vmap <silent><leader>a  <Plug>(coc-codeaction-selected)
+nmap <silent><leader>a  <Plug>(coc-codeaction)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight

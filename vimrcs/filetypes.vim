@@ -40,3 +40,11 @@ let dart_html_in_string=v:true
 let dart_corelib_highlight=v:false
 let dart_style_guide = 2
 let dart_format_on_save = 0
+
+" Run dartanalyzer on save
+" autocmd FileType dart setlocal makeprg=dartanalyzer\ ./
+" autocmd FileType python setlocal makeprg=pylint\ --output-format=parseable
+" autocmd BufWritePost *.dart silent make! <afile> | silent redraw!
+
+
+
