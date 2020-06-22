@@ -29,6 +29,7 @@ Plug 'ruanyl/vim-gh-line'
 Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
 Plug 'jceb/vim-orgmode' " use with `.org` files
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'dense-analysis/ale'
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
@@ -43,7 +44,6 @@ Plug 'lifepillar/pgsql.vim'
 Plug 'luisgomez-wk/frugal.vim'
 
 " Dumb shit
-Plug 'raghur/vim-ghost'
 Plug 'johngrib/vim-game-code-break'
 Plug 'gbigwood/Clippo'
 
