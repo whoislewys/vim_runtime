@@ -28,7 +28,7 @@ Plug 'cohama/lexima.vim'
 Plug 'ruanyl/vim-gh-line'
 Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
 Plug 'jceb/vim-orgmode' " use with `.org` files
-Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dense-analysis/ale'
 
 " Language stuff

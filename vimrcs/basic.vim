@@ -275,9 +275,6 @@ map <leader>s? z=
 " Quickly open a buffer for scribble
 map <leader>q :e ~/buffer<cr>
 
-" Quickly open a markdown buffer for scribble
-map <leader>m :e ~/buffer.md<cr>
-
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 

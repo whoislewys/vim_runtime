@@ -199,3 +199,12 @@ nmap <silent> <leader>l :Limelight!!<CR>
 " => vim-fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set diffopt+=vertical
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-markdown-preview
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set to 1, nvim will open the preview window after entering the markdown buffer
+" default: 0
+let g:mkdp_auto_start = 0
+
+nmap <leader>m :MarkdownPreview<CR>
