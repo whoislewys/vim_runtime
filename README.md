@@ -1,16 +1,8 @@
 # The Ultimate vimrc
 
-Over the last 10 days, I have used and tweaked some randos Vim configs. This configuration is the ultimate vimrc, blessed by Terry A. Davis himself.
+This is my vimrc. There are many like it, but this one is mine. It has been blessed by Terry A. Davis himself.
 
-There are two versions:
-
-* **The Basic**: If you want something small just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a good basic setup
-* **The Awesome**: Includes a ton of useful plugins, color schemes, and configurations
-
-I would, of course, recommend using the awesome version.
-
-
-## How to install the Awesome version?
+## These install instructions are probably outdated
 ### Install for your own user only
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
@@ -35,25 +27,7 @@ Naturally, `/opt/vim_runtime` can be any directory, as long as all the users spe
 
 Use [gitforwindows](http://gitforwindows.org/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
 
-
-## How to install on Linux
-
-If you have vim aliased as `vi` instead of `vim`, make sure to either alias it: `alias vi=vim`. Otherwise, `apt-get install vim`
-
-
-## How to update to latest version?
-
-Just do a git rebase!
-
-    cd ~/.vim_runtime
-    git pull --rebase
-
-
 ## Some screenshots
-
-Colors when editing a Python file:
-
-![Screenshot 1](https://dnp4pehkvoo6n.cloudfront.net/07583008e4da885801657e8781777844/as/Python%20editing.png)
 
 Opening recently opened files with the [mru.vim](https://github.com/vim-scripts/mru.vim) plugin:
 
@@ -65,76 +39,10 @@ Opening recently opened files with the [mru.vim](https://github.com/vim-scripts/
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2):
 ![Screenshot 4](https://dnp4pehkvoo6n.cloudfront.net/f0dcc4c9739148c56cbf8285a910ac41/as/Zen%20mode.png)
 
-
-## Included Plugins
-
-I recommend reading the docs of these plugins to understand them better. Each plugin provides a much better Vim experience!
-
-* [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for `the_silver_searcher` (ag) or ack -- a wicked fast grep
-* [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with `<leader+o>`
-* [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. It's mapped to `<Ctrl+F>`
-* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
-* [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
-* [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
-* [mru.vim](https://github.com/vim-scripts/mru.vim): Plugin to manage Most Recently Used (MRU) files. This plugin can be opened with `<leader+f>`
-* [open_file_under_cursor.vim](https://github.com/amix/open_file_under_cursor.vim): Open file under cursor when pressing `gf`
-* [pathogen.vim](https://github.com/tpope/vim-pathogen): Manage your vim runtimepath 
-* [snipmate.vim](https://github.com/garbas/vim-snipmate): snipmate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
-* [ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async)
-* [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
-* [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination
-* [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome, it should be illegal
-* [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object): Defines a new text object representing lines of code at the same indent level. Useful for python/vim scripts
-* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections for Vim, CTRL+N is remapped to CTRL+S (due to YankRing)
-* [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
-* [vim-zenroom2](https://github.com/amix/vim-zenroom2) Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room
-
-
-
-## Included modes
-
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-* [vim-less](https://github.com/groenewege/vim-less)
-* [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
-* [vim-markdown](https://github.com/tpope/vim-markdown)
-* [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
-* [vim-go](https://github.com/fatih/vim-go)
-
-
-## How to include your own stuff?
-
-After you have installed the setup, you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
-
-	~/.vim_runtime (master)> cat my_configs.vim
-	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
-	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
-
-You can also install your plugins, for instance, via pathogen you can install [vim-rails](https://github.com/tpope/vim-rails):
-
-	cd ~/.vim_runtime
-	git submodule add git://github.com/tpope/vim-rails.git my_plugins/vim-rails
-
-  It is extra helpful if you make an alias for this, like
-  `alias vget="cd ~/.vim_runtime/my_plugins && git submodule add $1"`
-
 ## Key Mappings
 
 The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) is `,`, so whenever you see `<leader>` it means `,`.
 
-
-### Plugin related mappings
-
-Open [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip) to see and manage the current buffers (`<leader>o`):
-    
-    map <leader>o :BufExplorer<cr>
-
-Open [MRU.vim](https://github.com/vim-scripts/mru.vim) to see the recently open files (`<leader>f`):
-
-    map <leader>f :MRU<CR>
-
-Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin to quickly find a file or a buffer (`<leader>j` or `<ctrl>f`):
-    
-    let g:ctrlp_map = '<c-f>'
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) mappings:
 
@@ -146,29 +54,15 @@ Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin to quickly find a fil
 
     map <leader>z :Goyo<cr>
 
-
 ### Normal mode mappings
 
 Fast saving of a buffer (`<leader>w`):
 
 	nmap <leader>w :w!<cr>
 	
-Map `<Space>` to `/` (search) and `<Ctrl>+<Space>` to `?` (backwards search):
-	
-	map <space> /
-	map <c-space> ?
-	map <silent> <leader><cr> :noh<cr>
-
 Disable highlights when you press `<leader><cr>`:
 	
 	map <silent> <leader><cr> :noh<cr>
-
-Smart way to move between windows (`<ctrl>j` etc.):
-	
-	map <C-j> <C-W>j
-	map <C-k> <C-W>k
-	map <C-h> <C-W>h
-	map <C-l> <C-W>l
 
 Closing of the current buffer(s) (`<leader>bd` and (`<leader>ba`)):
 	
@@ -193,11 +87,7 @@ Switch [CWD](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 	
 	map <leader>cd :cd %:p:h<cr>:pwd<cr>
 	
-Open `ack.vim` for fast search:
-	
-	map <leader>g :Ack 
-
-Quickly open a buffer for scripbble:
+Quickly open a buffer for scratch:
 	
 	map <leader>q :e ~/buffer<cr>
 
@@ -212,24 +102,6 @@ Visual mode pressing `*` or `#` searches for the current selection:
 
 	vnoremap <silent> * :call VisualSelection('f')<CR>
 	vnoremap <silent> # :call VisualSelection('b')<CR>
-
-When you press gv you `Ack.vim` after the selected text:
-
-	vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
-
-When you press `<leader>r` you can search and replace the selected text:
-
-	vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
-
-Surround the visual selection in parenthesis/brackets/etc.:
-
-    vnoremap $1 <esc>`>a)<esc>`<i(<esc>
-    vnoremap $2 <esc>`>a]<esc>`<i[<esc>
-    vnoremap $3 <esc>`>a}<esc>`<i{<esc>
-    vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-    vnoremap $q <esc>`>a'<esc>`<i'<esc>
-    vnoremap $e <esc>`>a"<esc>`<i"<esc>
-
 
 ### Insert mode mappings
 
