@@ -37,6 +37,7 @@ Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
 Plug 'git@github.com:HerringtonDarkholme/yats.vim'
+Plug 'fatih/vim-go'
 Plug 'aklt/plantuml-syntax'
 Plug 'scrooloose/vim-slumlord' " inline plantuml preview
 Plug 'tpope/vim-rails'
