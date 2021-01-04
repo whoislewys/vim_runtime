@@ -30,6 +30,7 @@ Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
 Plug 'jceb/vim-orgmode' " use with `.org` files
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dense-analysis/ale'
+Plug 'wakatime/vim-wakatime'
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
