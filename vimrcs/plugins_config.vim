@@ -161,11 +161,13 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Gotos
-nnoremap gd :call CocActionAsync('jumpDefinition', 'edit') <CR>
-nnoremap gr :call CocActionAsync('jumpReferences', 'edit') <CR>
-"
-" Rename
-nmap rn :call CocAction('cocRename') <CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+" nnoremap gd :call CocActionAsync('jumpDefinition', 'edit') <CR>
+" nnoremap gr :call CocActionAsync('jumpReferences', 'edit') <CR>
+
+" Symbol Rename
+nmap <leader>rn <Plug>(coc-rename)
 
 " coc-yank extension
 " install with: :CocInstall coc-yank
@@ -178,9 +180,10 @@ command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport
 command! -nargs=0 Format :call CocAction('format')
 
 " List Code actions (such as 'wrap with widget' for flutter)
-nmap <silent><leader>ca <Plug>(coc-codelens-action)
-vmap <silent><leader>a  <Plug>(coc-codeaction-selected)
-nmap <silent><leader>a  <Plug>(coc-codeaction)
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)w
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
@@ -208,3 +211,9 @@ set diffopt+=vertical
 let g:mkdp_auto_start = 0
 
 nmap <leader>m :MarkdownPreview<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => dashboard-nvim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set fuzzy search to fzf.vim, instead of default of clap (uses vim-clap)
+let g:dashboard_default_executive ='fzf'

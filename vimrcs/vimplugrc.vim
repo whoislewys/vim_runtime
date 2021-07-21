@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
 Plug 'itchyny/lightline.vim'
+Plug 'morhetz/gruvbox'
 
 " Utilities
 Plug 'tpope/vim-commentary'
@@ -26,9 +27,9 @@ Plug 'vim-scripts/mru.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'cohama/lexima.vim'
 Plug 'ruanyl/vim-gh-line'
-Plug 'aserebryakov/vim-todo-lists' " use with `.todo` files
+Plug 'aserebryakov/vim-todo-lists', {'commit': '5c7f7d5cd49770656c83669da4293a1eaae25913'}" use with `.todo` files
 Plug 'jceb/vim-orgmode' " use with `.org` files
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'dense-analysis/ale'
 Plug 'wakatime/vim-wakatime'
 
@@ -48,5 +49,6 @@ Plug 'luisgomez-wk/frugal.vim'
 " Dumb shit
 Plug 'johngrib/vim-game-code-break'
 Plug 'gbigwood/Clippo'
+Plug 'glepnir/dashboard-nvim'
 
 call plug#end()
