@@ -185,6 +185,14 @@ nmap <leader>ac  <Plug>(coc-codeaction)w
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" coc-prettier
+" use :Prettier to format current buffer.
+" or <leader>fmt
+" config overrides (for example, preferring single quotes) should be done via project level files only, see here https://prettier.io/docs/en/configuration.html
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>fmt <Plug>(coc-format-selected)
+nmap <leader>fmt  <Plug>(coc-format-selected)
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
