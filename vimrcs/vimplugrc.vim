@@ -31,7 +31,7 @@ Plug 'aserebryakov/vim-todo-lists', {'commit': '5c7f7d5cd49770656c83669da4293a1e
 Plug 'jceb/vim-orgmode' " use with `.org` files
 Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'dense-analysis/ale'
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
