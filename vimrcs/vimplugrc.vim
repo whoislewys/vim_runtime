@@ -29,6 +29,7 @@ Plug 'ruanyl/vim-gh-line'
 Plug 'aserebryakov/vim-todo-lists', {'commit': '5c7f7d5cd49770656c83669da4293a1eaae25913'}" use with `.todo` files
 Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'dense-analysis/ale'
+Plug 'andweeb/presence.nvim'
 " Plug 'wakatime/vim-wakatime'
 
 " Language stuff
