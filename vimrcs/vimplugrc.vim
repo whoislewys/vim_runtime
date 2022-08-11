@@ -34,10 +34,9 @@ Plug 'andweeb/presence.nvim'
 
 " Language stuff
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+" this fails everytime :(: 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css coc-prettier coc-python coc-eslint coc-snippets'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
-
-" this fails everytime :(: 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css coc-prettier coc-python coc-eslint coc-snippets'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'tomlion/vim-solidity'
 Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'

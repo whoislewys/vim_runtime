@@ -199,6 +199,13 @@ vmap <leader>fmt <Plug>(coc-format-selected)
 nmap <leader>fmt  <Plug>(coc-format-selected)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => UltiSnips
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<S-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sometimes Limelight can't calculate dimming color for current colorscheme
