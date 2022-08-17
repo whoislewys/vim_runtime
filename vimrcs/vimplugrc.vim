@@ -7,7 +7,7 @@ endif
 call plug#begin('~/.config/nvim/.vim_runtime/vim_plug_plugins')
 
 " Prettiness
-Plug 'git@github.com:whoislewys/onedark.vim'
+Plug 'whoislewys/onedark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
@@ -36,7 +36,7 @@ Plug 'andweeb/presence.nvim'
 Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 " this fails everytime :(: 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css coc-prettier coc-python coc-eslint coc-snippets'
 Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'tomlion/vim-solidity'
 Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
