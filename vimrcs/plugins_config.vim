@@ -36,8 +36,8 @@ let g:user_zen_mode='a'
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
-set grepprg=/bin/grep\ -nH
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated .node_modules'
+set grepprg=rg\ --color=always
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
