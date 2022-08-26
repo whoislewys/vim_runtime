@@ -51,6 +51,5 @@ Plug 'luisgomez-wk/frugal.vim'
 " Dumb shit
 Plug 'johngrib/vim-game-code-break'
 Plug 'gbigwood/Clippo'
-Plug 'glepnir/dashboard-nvim'
 
 call plug#end()
