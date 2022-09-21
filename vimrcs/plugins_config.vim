@@ -250,22 +250,23 @@ let g:dashboard_default_executive ='fzf'
 " => vim presence (discord presence)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General options
-let g:presence_auto_update         = 1
-let g:presence_neovim_image_text   = "The One True Text Editor"
-let g:presence_main_image          = "neovim"
-let g:presence_client_id           = "793271441293967371"
-" let g:presence_log_level           = "error"
-let g:presence_debounce_timeout    = 10
-let g:presence_enable_line_number  = 1
-let g:presence_blacklist           = []
-let g:presence_buttons             = 1
-let g:presence_file_assets         = {}
+let g:presence_auto_update         = 1 " Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
+let g:presence_neovim_image_text   = "The One True Text Editor" " Text displayed when hovered over the Neovim image
+let g:presence_main_image          = "neovim" " Main image display (either 'neovim' | 'file' )
+let g:presence_client_id           = "793271441293967371" " Use your own Discord application client id (not recommended)
+let g:presence_log_level           = "error" " Log messages at or above this level (one of the following: 'debug' | 'info' | 'warn' | 'error')
+let g:presence_debounce_timeout    = 10 " Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
+let g:presence_enable_line_number  = 1 " Displays the current line number instead of the current project
+let g:presence_blacklist           = [] " A list of strings or Lua patterns that disable Rich Presence if the current file name, path, or workspace matches
+let g:presence_buttons             = 1 " Configure Rich Presence button(s), either a boolean to enable/disable, a static table (`{{ label = "<label>", url = "<url>" }, ...}`, or a function(buffer: string, repo_url: string|nil): table)
+let g:presence_file_assets         = {} " Custom file asset definitions keyed by file names and extensions (see default config at `lua/presence/file_assets.lua` for reference)
+let g:presence_show_time           = 1 " Show the timer
 
 " Rich Presence text options
-let g:presence_editing_text        = "Editing [redacted]"
-let g:presence_file_explorer_text  = "Browsing %s"
-let g:presence_git_commit_text     = "Committing changes"
-let g:presence_plugin_manager_text = "Managing plugins"
-let g:presence_reading_text        = "Reading %s"
-let g:presence_workspace_text      = "Working on %s"
-let g:presence_line_number_text    = "Line %s out of %s"
+let g:presence_editing_text        = "Editing [redacted]" " Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
+let g:presence_file_explorer_text  = "Browsing %s" " Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
+let g:presence_git_commit_text     = "Committing changes" " Format string rendered when committing changes in git (either string or function(filename: string): string)
+let g:presence_plugin_manager_text = "Managing plugins" " Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
+let g:presence_reading_text        = "Reading %s" " Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
+let g:presence_workspace_text      = "Working on %s" " Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
+let g:presence_line_number_text    = "Line %s out of %s" " Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
