@@ -69,18 +69,21 @@ let g:lightline = {
       \ 'colorscheme': 'one', 
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \             ['fugitive', 'readonly', 'filename', 'modified'] ],
+      \             ['fugitive', 'readonly', 'gitbranch', 'filename', 'modified'] ],
       \   'right': [ [ 'lineinfo' ], ['percent'] ]
       \ },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
       \ },
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
       \ },
       \ 'separator': { 'left': ' ', 'right': ' ' },
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
