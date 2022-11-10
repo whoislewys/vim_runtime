@@ -91,7 +91,8 @@ set hlsearch
 set incsearch 
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw 
+" Yeah but it's less badass - me
+" set lazyredraw 
 
 " For regular expressions turn magic on
 set magic
