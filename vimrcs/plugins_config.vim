@@ -200,6 +200,16 @@ nmap <leader>ac  <Plug>(coc-codeaction)w
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" Use <c-space> to trigger completion
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" Trigger argument suggestions
+inoremap <silent><C-P> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
+
 " coc-prettier
 " use :Prettier to format current buffer.
 " or <leader>fmt
@@ -273,3 +283,10 @@ let g:presence_plugin_manager_text = "Managing plugins" " Format string rendered
 let g:presence_reading_text        = "Reading %s" " Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
 let g:presence_workspace_text      = "Working on %s" " Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
 let g:presence_line_number_text    = "Line %s out of %s" " Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => github copilot
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+imap <silent><script><expr> <Right> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true

@@ -24,6 +24,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'amix/vim-zenroom2'
 Plug 'vim-scripts/mru.vim'
+Plug 'github/copilot.vim'
 " TODO: replace nerdtree with vifm
 Plug 'scrooloose/nerdtree'
 Plug 'ruanyl/vim-gh-line'
