@@ -288,5 +288,5 @@ let g:presence_line_number_text    = "Line %s out of %s" " Format string rendere
 " => github copilot
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-imap <silent><script><expr> <Right> copilot#Accept("\<CR>")
+imap <silent><script><expr> <Right> copilot#Accept()
 let g:copilot_no_tab_map = v:true
