@@ -45,9 +45,9 @@ command W w !sudo tee % > /dev/null
 " For me, it's the persisting folds
 " https://vim.fandom.com/wiki/Make_views_automatic
 "If `options` is included in `viewoptions`, vim's current working directory at the time of `makeview` is stored and loaded with `loadview`.
-set viewoptions-=options
-au BufWritePost,BufLeave,WinLeave *.* mkview
-silent! au BufWinEnter *.* silent! loadview
+" set viewoptions-=options
+" au BufWritePost,BufLeave,WinLeave *.* mkview
+" silent! au BufWinEnter *.* silent! loadview
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
