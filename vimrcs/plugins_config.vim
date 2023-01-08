@@ -103,29 +103,6 @@ nnoremap <silent> <leader>z :Goyo<cr>:Limelight!!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_command = "goimports"
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Syntastic (syntax checker)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
-
-let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\}
-
-nmap <silent> <leader>a <Plug>(ale_next_wrap)
-
-" Disabling highlighting
-let g:ale_set_highlights = 0
-
-" Only run linting when saving the file
-let g:ale_lint_on_text_changed = 'never'
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,43 +149,60 @@ set statusline^=%{coc#status()}
 	\ coc#refresh()
   inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
-" Use <CR> to confirm completion, use: >
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
-
-" Gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
-" nnoremap gd :call CocActionAsync('jumpDefinition', 'edit') <CR>
-" nnoremap gr :call CocActionAsync('jumpReferences', 'edit') <CR>
-
-" Symbol Rename
-nmap <leader>rn <Plug>(coc-rename)
 
 " coc-yank extension
 " install with: :CocInstall coc-yank
 " -A means auto preview, and --normal means open list on normal mode.
 nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr> 
 
-" Add `:Or` command for organize imports of the current buffer.
-command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
-" Add `:Format` command for formatting
-command! -nargs=0 Format :call CocAction('format')
-
 " List Code actions (such as 'wrap with widget' for flutter)
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)w
+nmap <leader>ca  <Plug>(coc-codeaction)w
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
-" Use <c-space> to trigger completion
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
-
+" Use <Alt-CR> to trigger completion
+inoremap <silent><expr> <M-CR> coc#refresh()
 " Trigger argument suggestions
 inoremap <silent><C-P> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
+
+" Use <CR> to confirm completion, use: >
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming
+nmap <leader>rn <Plug>(coc-rename)
+
+" Add `:Format` command for formatting
+command! -nargs=0 Format :call CocAction('format')
+
+" Add `:OR` command for organize imports of the current buffer.
+command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
+
 
 " coc-prettier
 " use :Prettier to format current buffer.
@@ -291,3 +285,5 @@ let g:presence_line_number_text    = "Line %s out of %s" " Format string rendere
 " Tpope suggested mapping:
 imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
+let g:copilot_node_command = '~/.asdf/installs/nodejs/18.12.1/bin/node'
+
