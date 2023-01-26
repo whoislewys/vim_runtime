@@ -10,7 +10,6 @@ call plug#begin('~/.config/nvim/.vim_runtime/vim_plug_plugins')
 Plug 'whoislewys/onedark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
-Plug 'git@github.com:RRethy/vim-hexokinase', {'do': 'make hexokinase'}
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 
@@ -42,6 +41,7 @@ Plug 'git@github.com:MaxMEllon/vim-jsx-pretty'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-rails'
 Plug 'lifepillar/pgsql.vim'
+Plug 'jparise/vim-graphql'
 
 " Dumb shit
 Plug 'johngrib/vim-game-code-break'
