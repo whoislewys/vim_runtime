@@ -14,7 +14,7 @@ source ~/.config/nvim/.vim_runtime/vimrcs/vimplugrc.vim
 ' > ~/.config/nvim/init.vim
 
 # install onedark colorscheme
-# mkdir -p ~/.config/nvim/colors
-# cp ~/.config/nvim/.vim_runtime/vim_plug_plugins/onedark.vim/colors/onedark.vim ~/.config/nvim/colors
+mkdir -p ~/.config/nvim/colors
+cp ~/.config/nvim/.vim_runtime/vim_plug_plugins/onedark.vim/colors/onedark.vim ~/.config/nvim/colors
 
 echo "Installed the whoislewys extremely based Vim configuration successfully! :)"

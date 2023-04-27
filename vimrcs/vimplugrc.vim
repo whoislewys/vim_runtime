@@ -23,13 +23,12 @@ Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'amix/vim-zenroom2'
 Plug 'vim-scripts/mru.vim'
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 " TODO: replace nerdtree with vifm
 Plug 'scrooloose/nerdtree'
 Plug 'ruanyl/vim-gh-line'
 Plug 'aserebryakov/vim-todo-lists', {'commit': '5c7f7d5cd49770656c83669da4293a1eaae25913'}" use with `.todo` files
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-Plug 'andweeb/presence.nvim'
 " Plug 'wakatime/vim-wakatime' competitive programming p2p pvp on wakatime wen?
 
 " Language stuff

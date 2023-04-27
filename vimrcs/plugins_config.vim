@@ -283,7 +283,7 @@ let g:presence_line_number_text    = "Line %s out of %s" " Format string rendere
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Tpope suggested mapping:
-imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-let g:copilot_no_tab_map = v:true
-let g:copilot_node_command = '~/.asdf/installs/nodejs/18.12.1/bin/node'
+" imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
+" let g:copilot_node_command = '~/.asdf/installs/nodejs/18.12.1/bin/node'
 
