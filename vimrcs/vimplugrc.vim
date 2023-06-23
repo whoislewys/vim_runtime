@@ -41,6 +41,8 @@ Plug 'fatih/vim-go'
 Plug 'tpope/vim-rails'
 Plug 'lifepillar/pgsql.vim'
 Plug 'jparise/vim-graphql'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'sirver/ultisnips'
 
 " Dumb shit
 Plug 'johngrib/vim-game-code-break'
