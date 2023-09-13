@@ -64,12 +64,14 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " let g:lightline = {
 "      \ 'colorscheme': 'onedark',
 "      \ }
+"
 
+" NOTE: Getting current function in lightline to update requires coc-settings.json entry: `"coc.preferences.currentFunctionSymbolAutoUpdate": true`
 let g:lightline = {
       \ 'colorscheme': 'one', 
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \             ['fugitive', 'readonly', 'gitbranch', 'filename', 'modified'] ],
+      \             ['fugitive', 'readonly', 'gitbranch', 'filename', 'cocCurrentFunction', 'modified'] ],
       \   'right': [ [ 'lineinfo' ], ['percent'] ]
       \ },
       \ 'component': {
@@ -83,11 +85,16 @@ let g:lightline = {
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
+      \   'gitbranch': 'FugitiveHead',
+      \   'cocCurrentFunction': 'CocCurrentFunction'
       \ },
       \ 'separator': { 'left': ' ', 'right': ' ' },
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
+
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom

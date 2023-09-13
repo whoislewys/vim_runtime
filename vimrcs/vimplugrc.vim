@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " Utilities
 Plug 'tpope/vim-commentary'
