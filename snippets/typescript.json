@@ -1,0 +1,17 @@
+{
+  "Log variable to the console": {
+    "prefix": "logv",
+    "body": ["console.log('$1', $1);", "$0"],
+    "description": "Log to the console"
+  },
+  "Log variable warning to console": {
+    "prefix": "warnv",
+    "body": ["console.warn('$1', $1);", "$0"],
+    "description": "Log warning to the console"
+  },
+  "Log variable error to console": {
+    "prefix": "errorv",
+    "body": ["console.error('$1', $1);", "$0"],
+    "description": "Log error to the console"
+  }
+}

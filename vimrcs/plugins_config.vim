@@ -192,7 +192,7 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call ShowDocumentation()<CR>
 
 function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
+  if CocActionAsync('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
     call feedkeys('K', 'in')
@@ -200,7 +200,7 @@ function! ShowDocumentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming
 nmap <leader>rn <Plug>(coc-rename)
@@ -242,6 +242,20 @@ xmap <leader>x  <Plug>(coc-convert-snippet)
 " Make <tab> jump to next snippet arg
 let g:coc_snippet_next = '<tab>'
 
+" Determine the path to Python interpreter dynamically
+" (prevents coc from causing nvim to hang when searching for python)
+let python_executable = substitute(system('which -a python'), '\n', '', '')
+let python3_executable = substitute(system('which -a python3'), '\n', '', '')
+
+" Set the Python interpreter paths in Vim configuration
+if !empty(python_executable)
+    let g:python_host_prog = python_executable
+endif
+
+if !empty(python3_executable)
+    let g:python3_host_prog = python3_executable
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Limelight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -268,13 +282,6 @@ set diffopt+=vertical
 let g:mkdp_auto_start = 0
 
 nmap <leader>m :MarkdownPreview<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => dashboard-nvim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" set fuzzy search to fzf.vim, instead of default of clap (uses vim-clap)
-let g:dashboard_default_executive ='fzf'
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim presence (discord presence)
