@@ -43,11 +43,19 @@ command W w !sudo tee % > /dev/null
 
 " Saves views on leaving buffer, loads on enter
 " For me, it's the persisting folds
-" https://vim.fandom.com/wiki/Make_views_automatic
-"If `options` is included in `viewoptions`, vim's current working directory at the time of `makeview` is stored and loaded with `loadview`.
-" set viewoptions-=options
-" au BufWritePost,BufLeave,WinLeave *.* mkview
-" silent! au BufWinEnter *.* silent! loadview
+" https://vi.stackexchange.com/a/13874
+augroup AutoSaveGroup
+  autocmd!
+  " view files are about 500 bytes
+  " bufleave but not bufwinleave captures closing 2nd tab
+  " nested is needed by bufwrite* (if triggered via other autocmd)
+  " BufHidden for compatibility with `set hidden`
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview!
+  autocmd BufWinEnter ?* silent! loadview
+augroup end
+
+set viewoptions=folds,cursor
+set sessionoptions=folds
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -183,7 +191,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-set number "Show line numbers
+set number " Show line numbers
+set relativenumber " Show relative line numbers (and makes set number show current line number)
+
 
 """""""""""""""""""""""""""""
 " => Visual mode related
