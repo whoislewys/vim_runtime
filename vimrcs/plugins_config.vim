@@ -165,7 +165,7 @@ nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 
 " List Code actions (such as 'wrap with widget' for flutter)
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ca  <Plug>(coc-codeaction)w
+nmap <leader>ca  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
