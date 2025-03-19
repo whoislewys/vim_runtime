@@ -55,7 +55,8 @@ augroup AutoSaveGroup
 augroup end
 
 set viewoptions=folds,cursor
-set sessionoptions=folds
+set sessionoptions+=folds " save folds, in addition to default sessionoptions (like saving open tabs)
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
