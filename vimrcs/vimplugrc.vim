@@ -39,7 +39,6 @@ Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'tomlion/vim-solidity'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'fatih/vim-go'
 Plug 'tpope/vim-rails'
 Plug 'lifepillar/pgsql.vim'
 Plug 'jparise/vim-graphql'
