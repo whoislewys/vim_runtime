@@ -33,7 +33,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'wakatime/vim-wakatime'
 
 " Language stuff
-Plug 'git@github.com:neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+
 " this fails everytime :(: 'do': 'CocInstall coc-tsserver coc-json coc-html coc-css coc-prettier coc-python coc-eslint coc-snippets'
 " ALSO for graphql-lsp, do: `npm i -g graphql-language-service-cli`
 Plug 'dart-lang/dart-vim-plugin'
